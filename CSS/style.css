@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color: #777777;
 	font-size: 16px;
@@ -49,8 +49,6 @@ body {
 
 .title-first {
 	color: #fff;
-
-	font-family: 'Lato', sans-serif;
 }
 .title-first__main {
 	text-transform: uppercase;
@@ -60,10 +58,11 @@ body {
 	font-weight: 800;
 	letter-spacing: 10px;
 	margin-bottom: 10px;
-  animation-name: leftToRight;
-  animation-duration: 2s;
-  /* animation-delay: 2s; */
-  animation-timing-function: ease;
+	animation-name: leftToRight;
+	animation-duration: 2s;
+	/* animation-delay: 2s; */
+	animation-timing-function: ease;
+	backface-visibility: hidden;
 }
 .title-first__secondary {
 	display: block;
@@ -71,37 +70,58 @@ body {
 	font-weight: 70;
 	line-height: 48px;
 	letter-spacing: 5px;
-  animation-name: rigthToLeft;
-  animation-duration: 2s;
-  /* animation-delay: 2s; */
-  animation-timing-function: ease;
+	animation-name: rigthToLeft;
+	animation-duration: 2s;
+	/* animation-delay: 2s; */
+	animation-timing-function: ease;
+	backface-visibility: hidden;
+  margin-bottom: 65px;
 }
 
 @keyframes leftToRight {
 	0% {
 		opacity: 0;
-    transform: translateX(-100px);
+		transform: translateX(-100px);
 	}
-  80%{
-    transform: translateX(+20px);
-  }
+	80% {
+		transform: translateX(+20px);
+	}
 	100% {
 		opacity: 1;
-    transform: translateX(0px);
+		transform: translateX(0px);
 	}
 }
 
+.btn:link,
+:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color:#fff;
+  color: #777777;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.btn:hover{
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+.btn:active{
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
 
 @keyframes rigthToLeft {
 	0% {
 		opacity: 0;
-    transform: translateX(100px);
+		transform: translateX(100px);
 	}
-  80%{
-    transform: translateX(-10px);
-  }
+	80% {
+		transform: translateX(-10px);
+	}
 	100% {
 		opacity: 1;
-    transform: translateX(0px);
+		transform: translateX(0px);
 	}
 }
