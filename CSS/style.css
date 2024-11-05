@@ -181,6 +181,7 @@ body {
 
 .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+	
 }
 
 .col-2-of-4 {
@@ -212,4 +213,19 @@ body {
 	letter-spacing: 0.2rem;
 	line-height: 140%;
 	font-weight: 400;
+}
+
+.section-adventure{
+padding: 21rem 0;
+background: linear-gradient(
+			90deg,
+			rgba(186, 133, 84, 0.7) 0.03%,
+			rgba(1, 1, 1, 0.7) 99.94%
+		),
+		url('../img/section-adventure.jpg') center / cover no-repeat;
+		transform: skewY(7deg);
+}
+
+.section-adventure > *{
+	transform: skewY(-7deg);
 }
