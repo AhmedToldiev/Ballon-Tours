@@ -154,7 +154,7 @@ body {
 }
 
 
-.row {
+.row, .row-book {
   max-width: 114rem;
   margin: 0 auto;
 }
