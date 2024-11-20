@@ -1,4 +1,4 @@
-.btn:link,
+.btn,.btn:link,
 :visited {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -10,6 +10,7 @@
 	transition: all 0.5s;
 	position: relative;
 	font-size: 2rem;
+	border: none;
 }
 .btn:hover {
 	transform: translateY(-0.4rem);
@@ -40,5 +41,16 @@
 .btn_animated{
 animation: BtnToUp 0.5s ease-out 0.7s;
 animation-fill-mode: backwards;
+}
 
+
+.btn_brown,
+.btn_brown:link,
+.btn_brown:visited {
+    background: #a14f03;
+    color: white; 
+}
+
+.btn_brown:hover::after {
+    background: #a14f03; /
 }
