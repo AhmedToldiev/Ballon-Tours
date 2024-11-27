@@ -1,0 +1,27 @@
+/* Стили для мобильных устройств (максимальная ширина 600px) */
+@media only screen and (max-width: 600px) {
+	html {
+			font-size: 30%; 
+	}
+}
+
+/* Стили для портретных планшетов (максимальная ширина 900px) */
+@media only screen and (max-width: 900px) {
+	html {
+			font-size: 50%; 
+	}
+}
+
+/* Стили для ландшафтных планшетов (максимальная ширина 1240px) */
+@media only screen and (max-width: 1240px) {
+	html {
+			font-size: 56.25%; 
+	}
+}
+
+/* Стили для больших экранов (минимальная ширина 1800px) */
+@media only screen and (min-width: 1800px) {
+	html {
+			font-size: 75%; 
+	}
+}
