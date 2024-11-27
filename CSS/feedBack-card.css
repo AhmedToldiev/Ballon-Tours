@@ -14,7 +14,7 @@
 .feedBack-card__img {
 	width: 15rem;
 	height: 15rem;
-	background: green;
+	background: rgb(199, 237, 199);
 	float: left;
 	border-radius: 100rem;
 	shape-outside: circle(50% at 50% 50%);
