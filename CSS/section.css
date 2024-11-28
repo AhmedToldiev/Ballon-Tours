@@ -9,6 +9,11 @@
 	transform: skewY(7deg);
 }
 
+.section-about {
+	padding-top: 8rem;
+	margin-bottom: 20rem;
+}
+
 .section-adventure > * {
 	transform: skewY(-7deg);
 }

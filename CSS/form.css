@@ -14,7 +14,7 @@
 }
 
 .form {
-	width: 60%;
+	width: 70%;
 	padding-top: 5rem;
 	padding-left: 5rem;
 }
@@ -67,8 +67,12 @@
 }
 
 .form__group-radio {
-	width: 45%;
 	display: inline-block;
+}
+
+.form__group-radio:not(:last-child) {
+	margin-right: 5rem;
+	margin-left: 3rem;
 }
 
 .form__input-radio {

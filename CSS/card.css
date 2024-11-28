@@ -47,9 +47,6 @@ transform: translateY(-1.5rem) scale(1.06);
   overflow: hidden;
 }
 
-.card-tour__side_front{
-  /* background: rgb(51, 0, 255) */
-}
 
 .card-tour__side_back{
   transform: rotateY(180deg);
@@ -130,6 +127,7 @@ padding-top: 0;
  display: inline-block;
 
 }
+
 
 .card-tour__description ul li:not(:last-child){
   margin-bottom: 2rem;

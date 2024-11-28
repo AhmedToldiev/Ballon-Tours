@@ -45,6 +45,8 @@ body {
 	width: 100%;
 	text-align: center;
 }
+
+
 .header__logo {
 	height: 7rem;
 	width: 5.6rem;
@@ -66,10 +68,12 @@ body {
 	margin-bottom: 1rem;
 	animation-name: leftToRight;
 	animation-duration: 2s;
-	/* animation-delay: 2s; */
+	animation-delay: 1s;
 	animation-timing-function: ease;
 	backface-visibility: hidden;
 }
+
+
 .title-first__secondary {
 	display: block;
 	font-size: 4rem;
@@ -78,11 +82,13 @@ body {
 	letter-spacing: 0.5rem;
 	animation-name: rigthToLeft;
 	animation-duration: 2s;
-	/* animation-delay: 2s; */
+	animation-delay: 1s;
 	animation-timing-function: ease;
 	backface-visibility: hidden;
 	margin-bottom: 6.5rem;
 }
+
+
 
 @keyframes rigthToLeft {
 	0% {
@@ -149,10 +155,7 @@ body {
 	text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
 
-.section-about {
-	padding-top: 8rem;
-	margin-bottom: 20rem;
-}
+
 
 .row,
 .row-book {
