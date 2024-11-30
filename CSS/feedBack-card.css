@@ -7,8 +7,22 @@
 	transform: skewX(330deg);
 }
 
+@media only screen and (max-width: 900px) {
+	.feedBack-card {
+		transform: skewX(350deg);
+		padding: 3rem;
+	}
+}
+
 .feedBack-card > * {
 	transform: skewX(-330deg);
+}
+
+@media only screen and (max-width: 900px) {
+	.feedBack-card > * {
+		transform: skewX(-350deg);
+		text-align: center;
+	}
 }
 
 .feedBack-card__img {
@@ -26,6 +40,14 @@
 		height: 100%;
 		transform: scale(1.2);
 		transition: all 0.5s;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.feedBack-card__img {
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 3rem;
 	}
 }
 
