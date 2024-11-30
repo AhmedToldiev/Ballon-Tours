@@ -13,18 +13,50 @@
 	overflow: hidden;
 }
 
+@media only screen and (max-width: 900px) {
+	.book {
+		background: linear-gradient(
+				115deg,
+				rgba(255, 255, 255, 0.9) 0%,
+				rgba(255, 255, 255, 0.9) 507%,
+				rgba(186, 133, 80, 0.8) 57%,
+				rgba(161, 79, 3, 0.8) 100%
+			),
+			url(../img/bg-form.jpg) center / cover no-repeat;
+	}
+}
 .form {
 	width: 70%;
 	padding-top: 5rem;
 	padding-left: 5rem;
 }
 
+@media only screen and (max-width: 900px) {
+	.form {
+		width: 100%;
+		padding-top: 3rem;
+		padding-left: 3rem;
+	}
+}
+
 .form__group:not(:last-child) {
 	margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 1240px) {
+	.form__group:not(:last-child) {
+		margin-bottom: 0;
+	}
+}
+
 .form__group:nth-child(4) {
 	margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1240px) {
+	.form__group:nth-child(4) {
+		margin-bottom: 2.5rem;
+	}
 }
 
 .form__input {
@@ -39,6 +71,13 @@
 	border-radius: 0.5rem;
 	width: 70%;
 }
+
+@media only screen and (max-width: 900px) {
+	.form__input {
+		width: 90%;
+	}
+}
+
 .form__input:focus {
 	outline: none;
 	border-bottom: 0.3rem solid #66d763;
@@ -69,9 +108,21 @@
 	display: inline-block;
 }
 
+@media only screen and (max-width: 900px) {
+	.form__group-radio {
+		display: block;
+	}
+}
+
 .form__group-radio:not(:last-child) {
 	margin-right: 5rem;
 	margin-left: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+	.form__group-radio:not(:last-child) {
+		margin-bottom: 2rem;
+	}
 }
 
 .form__input-radio {
