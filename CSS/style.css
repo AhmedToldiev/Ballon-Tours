@@ -37,6 +37,18 @@ body {
 		url('../img/header-backgroung.jpg') center / cover no-repeat;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
+
+@media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+	.header {
+		background: linear-gradient(
+				90deg,
+				rgba(186, 133, 84, 0.7) 0.03%,
+				rgba(1, 1, 1, 0.7) 99.94%
+			),
+			url('../img/header-backgroung.jpg') center / cover no-repeat;
+	}
+}
+
 .header__box {
 	position: absolute;
 	top: 40%;
@@ -46,6 +58,11 @@ body {
 	text-align: center;
 }
 
+@media only screen and (max-width: 1240px) {
+	.header__box {
+		top: 50%;
+	}
+}
 
 .header__logo {
 	height: 7rem;
@@ -73,7 +90,6 @@ body {
 	backface-visibility: hidden;
 }
 
-
 .title-first__secondary {
 	display: block;
 	font-size: 4rem;
@@ -87,8 +103,6 @@ body {
 	backface-visibility: hidden;
 	margin-bottom: 6.5rem;
 }
-
-
 
 @keyframes rigthToLeft {
 	0% {
@@ -146,6 +160,17 @@ body {
 	backface-visibility: hidden;
 }
 
+@media only screen and (max-width: 1240px) {
+	.title-secondary {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.title-secondary {
+		letter-spacing: 0.6rem;
+	}
+}
 .title-secondary_white {
 	color: white;
 }
@@ -154,8 +179,6 @@ body {
 	transform: skewY(2deg) skewX(15deg) scale(1.1);
 	text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 }
-
-
 
 .row,
 .row-book {
@@ -180,9 +203,21 @@ body {
 	font-weight: 700;
 }
 
+@media only screen and (max-width: 1240px) {
+	.title-third {
+		font-size: 1.8rem;
+	}
+}
+
 .paragraph {
 	font-size: 1.6rem;
 	letter-spacing: 0.2rem;
 	line-height: 140%;
 	font-weight: 400;
+}
+
+@media only screen and (max-width: 1240px) {
+	.paragraph {
+		font-size: 1.5rem;
+	}
 }
